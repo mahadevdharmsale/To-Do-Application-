@@ -1,0 +1,234 @@
+/* Reset some default styles for cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Button styling */
+.btn {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Container for layout */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Input and Textarea styling */
+input[type="text"],
+input[type="password"],
+textarea {
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #007bff;
+}
+
+/* Layout for Todo List */
+.todo-list-container {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.todo-list-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-list-container li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Styling for actions (Edit, Delete) */
+.todo-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-actions a {
+    color: #eff0f1;
+    text-decoration: none;
+}
+
+.todo-actions a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%; /* Ensure buttons span the width of the form */
+    }
+
+    .todo-list-container {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .todo-actions {
+        flex-direction: column;
+    }
+}
+
+/* Additional specific button styles for different actions */
+.logout-btn {
+    background-color: #dc3545;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
+
+.add-task-btn {
+    background-color: #007bff;
+}
+
+.add-task-btn:hover {
+    background-color: #0056b3;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    background-color: #28a745;
+}
+
+.delete-btn:hover {
+    background-color: #218838;
+}
+
+.cancel-btn {
+    background-color: #6c757d;
+}
+
+.cancel-btn:hover {
+    background-color: #5a6268;
+}
+
+.update-btn {
+    background-color: #28a745;
+    width: 100%;
+}
+
+.update-btn:hover {
+    background-color: #218838;
+}
+
+.back-btn {
+    background-color: #007bff;
+    width: 100%;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+}
+.login-btn {
+    background-color: #4428a7;
+}
+
+.login-btn:hover {
+    background-color: #4428a7;
+}
+.register-btn {
+    background-color: #28a745;
+}
+
+.register-btn:hover {
+    background-color: #218838;
+}
+
+.add-btn {
+    background-color: #4428a7;
+}
+
+.add-btn:hover {
+    background-color: #4428a7;
+}
+
+/* Specific styling for Update/Delete pages */
+.update-container,
+.delete-container {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Textarea group for checkboxes (completed task) */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
